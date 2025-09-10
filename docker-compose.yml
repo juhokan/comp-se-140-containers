@@ -11,7 +11,7 @@ services:
       - GO_SERVER_URL=http://go-server:8080
       - STORAGE_URL=http://storage:5000
     volumes:
-      - vStorage:/vstorage
+      - ./vstorage:/vstorage/log.txt
   go-server:
     build:
       context: ./service2
@@ -21,14 +21,14 @@ services:
       - PORT=8080
       - STORAGE_URL=http://storage:5000
     volumes:
-      - vStorage:/vstorage
+      - ./vstorage:/vstorage/log.txt
   storage:
     build:
       context: ./storage
     expose:
       - "5000"
     volumes:
-      - vStorage:/data
+      - ./vstorage:/vstorage/log.txt
 volumes:
   vStorage:
     driver: local
