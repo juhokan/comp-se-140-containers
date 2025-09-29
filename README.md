@@ -91,7 +91,7 @@ This project implements two different storage approaches, each with distinct cha
 
 **Disadvantages**: Race conditions, platform dependency, no file coordination, security risks
 
-### 2. Storage service with snternal container Storage
+### 2. Storage service with internal container storage
 
 **Implementation**: Flask-based Python service with REST API endpoints (GET/POST `/log`) for centralized log management.
 
