@@ -1,0 +1,6 @@
+Used LLM tools: GitHub Copilot (Agent mode with claude sonnet 4) and Claude Code
+Motivation for LLM usage: By using plan mode and agentic tools, I was able to concurrently develop the underlying applications (Hono, Go, Python).
+After the initial applications were created according to my instructions, I was able to match them to the course requirements and dockerize them myself.
+The tools mostly helped with development time as I didn't have to create all of the application code myself since that wasnt the main goal of the exercise.
+One mistake the LLM's both made was mounting the storage to the volume which resulted in duplicate data in the log.txt. This however was an easy fix.
+I think with good promting, tool instructions like CLAUDE.md, cursor rules etc, and thorough planning, this exercise is possible to be entirely done using LLM tools. I did not try to create it fully, but for what I used the tools for, it was able to create what I wanted.

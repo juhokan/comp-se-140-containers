@@ -1,0 +1,14 @@
+docker container ls
+CONTAINER ID   IMAGE                                COMMAND                  CREATED          STATUS          PORTS                    NAMES
+be02049498c7   comp-se-140-containers-hono-server   "/usr/local/bin/dock…"   16 minutes ago   Up 48 seconds   0.0.0.0:8199->3000/tcp   comp-se-140-containers-hono-server-1
+df40c4f3116f   comp-se-140-containers-storage       "python storage.py"      16 minutes ago   Up 49 seconds   5000/tcp                 comp-se-140-containers-storage-1
+4a03a9e073b2   comp-se-140-containers-go-server     "./server"               16 minutes ago   Up 49 seconds   8080/tcp                 comp-se-140-containers-go-server-1
+
+docker network ls
+NETWORK ID     NAME                             DRIVER    SCOPE
+dab2f9505ad8   bridge                           bridge    local
+48be828c504e   comp-se-140-containers_default   bridge    local
+496378cf6d0e   host                             host      local
+88267c8b288f   none                             null      local
+
+> Note: the network comp-se-140-containers_default is what is used in the compose for this project 
